@@ -17,7 +17,7 @@ Now we have modules `Foo1` and `Foo2`. Each one exports a copy of the type
 
     mixins:
           foo (Foo as Foo1) requires (Foo.Sig as Foo.Sig1),
-          foo (Foo as Foo2) requires (Foo.Sig as Foo.Sig1)
+          foo (Foo as Foo2) requires (Foo.Sig as Foo.Sig2)
 
 Both copies of the type `Foo` count as different datatypes because we matched
 the signature with different mixin modules `Foo.Sig1` and `Foo.Sig2` (even if
