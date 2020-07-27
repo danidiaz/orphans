@@ -8,8 +8,8 @@ We have a library `foo` with a module `Foo` which exports a type `Foo`.
 There's also an empty, unused `Foo.Sig` [module
 signature](https://downloads.haskell.org/ghc/latest/docs/html/users_guide/separate_compilation.html#module-signatures):
 
-  exposed-modules:     Foo
-  signatures:          Foo.Sig
+    exposed-modules:     Foo
+    signatures:          Foo.Sig
 
 In the executable section, we instantiate the `foo` lib in two different ways.
 Now we have modules `Foo1` and `Foo2`. Each one exports a copy of the type
